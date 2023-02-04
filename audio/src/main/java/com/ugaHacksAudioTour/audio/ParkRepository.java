@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ParkRepository extends MongoRepository<Park, ObjectId> {
-
+    Optional<Park> findParkByParkId(String parkId);
 }

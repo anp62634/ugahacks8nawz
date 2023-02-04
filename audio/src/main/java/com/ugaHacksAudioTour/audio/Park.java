@@ -15,7 +15,7 @@ public class Park {
     private String city;
     private String stateCode;
     private String fullName;
-    @Id
+
     private String parkId;
     private String imageUrl;
     private String hours;
