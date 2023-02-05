@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom";
+import "./Form.css"
 
 export default function Register() {
     return (
-        <div className='registerParent'>
-            <h2>Register</h2>
+        <div className='formParent'>
+            <h2 className="formTitle">Register</h2>
             <form>
                 <label>First Name</label>
                 <input 
@@ -36,7 +37,7 @@ export default function Register() {
                 type = "text"
                 placeholder='Password'
                 />
-                <input type="submit" value="Register"></input>
+                <input type="submit" value="Register" className='button'></input>
             </form>
         </div>
     )

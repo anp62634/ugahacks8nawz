@@ -1,11 +1,11 @@
 import React, {useState} from "react"
-import {Link, useNavigate} from "react-router-dom"
-import "./Login.css"
+import { useNavigate } from "react-router-dom"
+import "./Form.css"
 
 export default function Login() {
     return (
-        <div className="loginParent">
-        <h2 className="logInHeader">Log In</h2>
+        <div className="formParent">
+        <h2 className="formTitle">Log In</h2>
         <form>
             <label>Username</label>
             <input
@@ -18,6 +18,7 @@ export default function Login() {
             type="text"
             />
         </form>
+        <input type="submit" value="Log In" className="button"></input>
         </div>
     )
 }
