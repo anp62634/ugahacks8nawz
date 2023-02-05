@@ -18,5 +18,15 @@ public class Park {
 
     private String parkId;
     private String imageUrl;
-    private String hours;
-}
+    private String[] hours;
+
+    public Park(String[] activities, String city, String stateCode, String fullName, String parkId, String imageUrl, String[] hours) {
+        this.activities = activities;
+        this.city = city;
+        this.stateCode = stateCode;
+        this.fullName = fullName;
+        this.parkId = parkId;
+        this.imageUrl = imageUrl;
+        this.hours = hours;
+    }
+

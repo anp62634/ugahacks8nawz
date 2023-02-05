@@ -1,7 +1,11 @@
 package com.ugaHacksAudioTour.audio;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ParkService {
@@ -10,18 +14,19 @@ public class ParkService {
 
     @Autowired
     private MongoTemplate mongoTemplate;
-    public list<Park> allParks(){
-        return parkRepository.findAll()
+    public List<Park> allParks(){
+        return parkRepository.findAll();
     }
 
 
-    public Optional<Park> singleMovie(String parkId){
+    public Optional<Park> singlePark(String parkId){
         return parkRepository.findByParkId(parkId);
     }
 
-    public Park createPark(String[] activities, String city, String stateCode, String fullName, String parkId, String imageUrl, String url){
-
+    public void createPark(String[] activities, String city, String stateCode, String fullName, String parkId, String imageUrl, String[] hours){
+        parkRepository.save(new Park(activities,city,stateCode,fullName,parkId,imageUrl,hours));
     }
 
 
 }
+
