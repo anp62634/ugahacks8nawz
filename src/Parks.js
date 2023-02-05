@@ -14,9 +14,14 @@ function Parks() {
                 <input type="submit" value="Search" className="button"/>
             </form>
             <br></br>
+            <h3>Search Results</h3>
+            <div className="searchBox"></div>
+            <br></br>
+            <br></br>
             <br></br>
             <br></br>
             <h3>Your Parks</h3>
+            <div className="savedBox"></div>
         </div>
     )
 }
