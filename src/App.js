@@ -4,7 +4,7 @@ import "./App.css";
 import Home from "./Home"
 import Login from "./Login"
 import NavBar from "./NavBar"
-import Register from "./Register";
+import Register from "./Register"
 
 function App() {
   return (

@@ -1,0 +1,12 @@
+body {
+    background-color: #72b172;
+}
+label {
+    font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+}
+.logInHeader {
+    color: white;
+    font-size: 3em;
+}
