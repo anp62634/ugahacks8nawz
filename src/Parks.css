@@ -8,4 +8,14 @@ h3 {
     font-size: 2em;
 }
 
+.searchBar {
+    display: flex;
+}
 
+.saveBox {
+    display: flex;
+}
+
+.searchBox {
+    display: flex;
+}
